@@ -10,7 +10,7 @@ END MUX;
 
 ARCHITECTURE options OF MUX IS
 BEGIN
-	PROCESS ()
+	PROCESS (sinal)
     BEGIN
         CASE sinal IS
             WHEN '0' => 

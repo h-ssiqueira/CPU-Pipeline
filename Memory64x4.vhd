@@ -4,7 +4,7 @@ USE ieee.numeric_std.all;
 
 ENTITY Memory64x4 IS
     PORT(
-		  clock			:IN STD_LOGIC;
+		  clock1			:IN STD_LOGIC;
         address			:IN STD_LOGIC_VECTOR(7 DOWNTO 0); -- Valor de PC
         memdata			:OUT STD_LOGIC_VECTOR(15 DOWNTO 0)); -- Saída de 16 bits referente a instrução
 END ENTITY;
@@ -20,13 +20,13 @@ ARCHITECTURE MEMORY OF Memory64x4 IS
 	-- OP | RS | RT | RD | 000
 	-- OP | RS | RT | IMMEDIATE
 BEGIN
-	PROCESS(address, clock, ADR1, ADR2, ADR3, ADR4)
+	PROCESS(address, clock1, ADR1, ADR2, ADR3, ADR4)
 	BEGIN
 		ADR1 <= TO_INTEGER(UNSIGNED(address)); -- Calcula os endereços na subida de clock
 		ADR2 <= ADR1 + 1;
 		ADR3 <= ADR1 + 2;
 		ADR4 <= ADR1 + 3;
-		IF clock'EVENT AND clock = '0' THEN -- Escreve ba descida de clock --CONFERIR DPS SE DA CERTO (SE NÃO DER MUDAR PARA 1)
+		IF clock1'EVENT AND clock1 = '0' THEN -- Escreve ba descida de clock --CONFERIR DPS SE DA CERTO (SE NÃO DER MUDAR PARA 1)
 			memdata(15 DOWNTO 12) <= rom (ADR1); -- load 4 bits
 			memdata(11 DOWNTO 8) <= rom (ADR2); -- load 4 bits
 			memdata(7 DOWNTO 4) <= rom (ADR3); -- load 4 bits

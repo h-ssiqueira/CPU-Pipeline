@@ -8,7 +8,7 @@ END SignExtend;
 
 ARCHITECTURE options OF SignExtend IS
 BEGIN
-    PROCESS()
+    PROCESS(Immediate)
     BEGIN
         IF Immediate(5) = '1' THEN
             ExtImmediate(4 DOWNTO 0) <= Immediate(4 DOWNTO 0);
