@@ -39,10 +39,10 @@ BEGIN
                 WHEN "0101" => -- SUBI
                     state <= OpSubI;
 
-                WHEN "0111" => -- ANDR
+                WHEN "0110" => -- ANDR
 					state <= OpAndR;
 
-				WHEN "1000" => -- ANDI
+				WHEN "0111" => -- ANDI
 					state <= OpAndI;
 				
 				WHEN "1000" => -- ORR

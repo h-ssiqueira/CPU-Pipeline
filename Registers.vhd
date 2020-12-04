@@ -23,8 +23,7 @@ ARCHITECTURE options OF Registers IS
 			R5 <= "00000000";
 			R6 <= "00000000";
 			R7 <= "00000000";
-		END IF;
-		IF clock1'EVENT AND clock1 = '1' AND RegWrite1 = '1' THEN -- Realiza a escrita antes da leitura na subida de clock 
+		ELSIF clock1'EVENT AND clock1 = '1' AND RegWrite1 = '1' THEN -- Realiza a escrita antes da leitura na subida de clock 
 			CASE Rd1 IS -- R0 é uma constante 0, por isso não há escrita neste registrador
 				WHEN "001" =>
 					R1 <= data;
