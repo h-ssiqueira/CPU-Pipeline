@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.all;
 
 ENTITY CPU IS
 	PORT( 
-            CLOCK,RESET :IN STD_LOGIC;
+            CLOCK,RESET :IN STD_LOGIC
 
         );
 END CPU;
@@ -24,6 +24,15 @@ ARCHITECTURE options OF CPU IS
                 PC				:IN	STD_LOGIC_VECTOR(7 DOWNTO 0); -- Valor de PC da instruçâo atual
                 PC4				:OUT STD_LOGIC_VECTOR(7 DOWNTO 0) -- Saída de PC atualizado (PC+4)
             );
+    END COMPONENT;
+
+    COMPONENT Control IS
+    PORT(   clock1, reset1                                      :IN STD_LOGIC;
+            opcode                                              :IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+            PCWrite1, ALUSrcB1, REGWrite1, RegDst1    			:OUT STD_LOGIC;
+            ALUOp1                         						:OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+    	);
+            
     END COMPONENT;
 
     COMPONENT EXWB IS
@@ -74,11 +83,19 @@ ARCHITECTURE options OF CPU IS
             ); 
     END COMPONENT;
 
-    COMPONENT MUX IS
+    COMPONENT MUXD IS
         PORT( 
                 sinal           :IN STD_LOGIC;
                 A,B			    :IN STD_LOGIC_VECTOR (7 DOWNTO 0);
                 dado    		:OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
+            );
+    END COMPONENT;
+
+    COMPONENT MUXR IS
+        PORT( 
+                sinal           :IN STD_LOGIC;
+                A,B			    :IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+                dado    		:OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
             );
     END COMPONENT;
 
@@ -106,8 +123,42 @@ ARCHITECTURE options OF CPU IS
             );
     END COMPONENT;
 
+    SIGNAL pcwrite, fwrA, fwrB, ALUSrcBid, ALUSrcBex, RegDstid, RegDstex, regwriteid, regwriteex, regwritewb : STD_LOGIC;
+    SIGNAL ALUopid, ALUopex : STD_LOGIC_VECTOR(1 DOWNTO 0);
+    SIGNAL RSex, RTex, RDex, RDEXR, RDwb : STD_LOGIC_VECTOR(2 DOWNTO 0);
+    SIGNAL Imedid, Imedex, PCA, PCATT, DataAid, DataBid, DataAex, DataBex, a ,b, Bdata, resultex, resultwb : STD_LOGIC_VECTOR(7 DOWNTO 0);
+    SIGNAL Memif, Memid : STD_LOGIC_VECTOR(15 DOWNTO 0);
+
 BEGIN
-	
+    REGPC: PC PORT MAP(pcwrite,RESET,CLOCK,PCATT,PCA);
+
+    ATTPC: ALUPC PORT MAP(CLOCK,PCA,PCATT);
+
+    MEMORY: Memory64x4 PORT MAP(CLOCK,PCA,Memif);
+
+    PIPEIFID: IFID PORT MAP(CLOCK,Memif,Memid);
+
+    CPUCONTROL: Control PORT MAP(CLOCK,RESET,Memid(15 DOWNTO 12),pcwrite,ALUSrcBid,regwriteid,RegDstid,ALUopid);
+
+    BANKREG: Registers PORT MAP(regwritewb,CLOCK,RESET,Memid(11 DOWNTO 9), Memid(8 DOWNTO 6),RDwb,resultwb,DataAid, DataBid);
+
+    EXTEND: SignExtend PORT MAP(Memid(5 DOWNTO 0),Imedid);
+    
+    PIPEIDEX: IDEX PORT MAP(CLOCK,regwriteid,ALUSrcBid,RegDstid,ALUopid,Memid(11 DOWNTO 9),Memid(8 DOWNTO 6),Memid(5 DOWNTO 3),DataAid,DataBid,Imedid,regwriteex,ALUSrcBex,RegDstex,ALUopex,RSex,RTex,RDex,DataAex,DataBex,Imedex);
+
+    FOWARDALUSRCB: Fowarding PORT MAP(CLOCK,regwritewb,RSex,RTex,RDWB,fwrA,fwrB);
+
+    DESTINATION: MUXR PORT MAP(RegDstex,RTex,RDex,RDEXR);
+
+    FWA: MUXD PORT MAP(fwrA,DataAex,resultwb,a);
+
+    FWB: MUXD PORT MAP(fwrB,DataBex,resultwb,Bdata);
+
+    ALUSRCB: MUXD PORT MAP(ALUSrcBex,Bdata,Imedex,b);  
+
+    ULA: ALU PORT MAP(CLOCK,ALUopex,a,b,resultex);
+
+    PIPEEXWB: EXWB PORT MAP(CLOCK,regwriteex,RDEXR,resultex,regwritewb,RDwb,resultwb);
         
     
 END options;

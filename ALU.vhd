@@ -13,7 +13,7 @@ ARCHITECTURE options OF ALU IS
 BEGIN
 	PROCESS (ALUop, A, B, clock1)
 	BEGIN
-		IF clock1'EVENT AND clock1 = '1' THEN -- Realiza a operação na subida de clock
+		IF clock1'EVENT AND clock1 = '0' THEN -- Realiza a operação na subida de clock
 			CASE ALUop IS
 				WHEN "00" => -- AND
 					ALUout <= A AND B;
