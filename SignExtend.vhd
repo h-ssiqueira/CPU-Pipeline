@@ -11,8 +11,8 @@ BEGIN
     PROCESS(Immediate)
     BEGIN
         IF Immediate(5) = '1' THEN
-            ExtImmediate(4 DOWNTO 0) <= Immediate(4 DOWNTO 0);
-            ExtImmediate(7 DOWNTO 5) <= "100"; -- Retorna o imediato estendido com o valor de sinalalidade preservado (números negativos)
+            ExtImmediate(5 DOWNTO 0) <= Immediate(5 DOWNTO 0);
+            ExtImmediate(7 DOWNTO 6) <= "11"; -- Retorna o imediato estendido com o valor de sinalalidade preservado (números negativos)
         ELSE
             ExtImmediate(5 DOWNTO 0) <= Immediate;
             ExtImmediate(7 DOWNTO 6) <= "00"; -- Retorna o imediato estendido com o valor de sinalidade preservado (números positivos)

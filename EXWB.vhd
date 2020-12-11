@@ -20,13 +20,16 @@ BEGIN
 	PROCESS (clock1)
 	BEGIN
 		IF clock1'EVENT AND clock1 = '0' THEN -- Realiza a escrita na descida de clock
-            RegWrite <= RegWriteEX;
-            RD <= RDEX;
-            Result <= ResultEX;
-        ELSIF clock1'EVENT AND clock1 = '1' THEN -- Realiza a leitura na subida de clock
-            RegWriteWB <= RegWrite;
-            RDWB <= RD;
-            ResultWB <= Result;
+			RegWriteWB <= RegWriteEX;
+			RDWB <= RDEX;
+			ResultWB <= ResultEX;
+            --RegWrite <= RegWriteEX;
+            --RD <= RDEX;
+            --Result <= ResultEX;
+        --ELSIF clock1'EVENT AND clock1 = '1' THEN -- Realiza a leitura na subida de clock
+            --RegWriteWB <= RegWrite;
+            --RDWB <= RD;
+            --ResultWB <= Result;
 		END IF;
     END PROCESS;
 END options;

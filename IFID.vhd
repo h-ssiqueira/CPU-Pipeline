@@ -13,10 +13,12 @@ SIGNAL MEM: STD_LOGIC_VECTOR (15 DOWNTO 0);
 BEGIN
 	PROCESS (clock1)
 	BEGIN
-		IF clock1'EVENT AND clock1 = '1' THEN -- Realiza a leitura na subida de clock
-			Instruction <= MEM;
-		ELSIF clock1'EVENT AND clock1 = '0' THEN -- Realiza a escrita na descida de clock
-			MEM <= Memdata;
+		--IF clock1'EVENT AND clock1 = '1' THEN -- Realiza a leitura na subida de clock
+			--Instruction <= MEM;
+		--ELSIF clock1'EVENT AND clock1 = '0' THEN -- Realiza a escrita na descida de clock
+			--MEM <= Memdata;
+			IF clock1'EVENT AND clock1 = '0' THEN
+				Instruction <= Memdata;
 		END IF;
     END PROCESS;
 END options;

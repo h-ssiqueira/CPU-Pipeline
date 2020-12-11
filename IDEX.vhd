@@ -23,27 +23,37 @@ BEGIN
 	PROCESS (clock1)
 	BEGIN
 		IF clock1'EVENT AND clock1 = '0' THEN -- Realiza a escrita na descida de clock
-            RegWrite <= RegWriteID;
-            ALUSrcB <= ALUSrcBID;
-            RegDst <= RegDstID;
-            ALUOp <= ALUOPID;
-            A <= AID;
-            B <= BID;
-            Imed <= ImedID;
-            RS <= RSID;
-            RT <= RTID;
-            RD <= RDID;
-        ELSIF clock1'EVENT AND clock1 = '1' THEN -- Realiza a leitura na subida de clock
-            RegWriteEX <= RegWrite;
-            ALUSrcBEX <= ALUSrcB;
-            RegDstEX <= RegDst;
-            ALUOpEX <= ALUOp;
-            AEX <= A;
-            BEX <= B;
-            ImedEX <= Imed;
-            RSEX <= RS;
-            RTEX <= RT;
-            RDEX <= RD;
+			RegWriteEX <= RegWriteID;
+			ALUSrcBEX <= ALUSrcBID;
+			RegDstEX <= RegDstID;
+			ALUOPEX <= ALUOPID;
+			RSEX <= RSID;
+			RTEX <= RTID;
+			RDEX <= RDID;
+			AEX <= AID;
+			BEX <= BID;
+			ImedEX <= ImedID;
+            --RegWrite <= RegWriteID;
+            --ALUSrcB <= ALUSrcBID;
+            --RegDst <= RegDstID;
+            --ALUOp <= ALUOPID;
+            --A <= AID;
+            --B <= BID;
+            --Imed <= ImedID;
+            --RS <= RSID;
+            --RT <= RTID;
+            --RD <= RDID;
+        --ELSIF clock1'EVENT AND clock1 = '1' THEN -- Realiza a leitura na subida de clock
+            --RegWriteEX <= RegWrite;
+            --ALUSrcBEX <= ALUSrcB;
+            --RegDstEX <= RegDst;
+            --ALUOpEX <= ALUOp;
+            --AEX <= A;
+            --BEX <= B;
+            --ImedEX <= Imed;
+            --RSEX <= RS;
+            --RTEX <= RT;
+            --RDEX <= RD;
 		END IF;
     END PROCESS;
 END options;

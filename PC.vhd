@@ -14,13 +14,10 @@ SIGNAL valor :STD_LOGIC_VECTOR(7 DOWNTO 0); -- Valor de PC armazenado
 BEGIN
 	PROCESS(PCWrite1, RESET1, ADDRESS, CLOCK1)
 	BEGIN
-		IF CLOCK1'EVENT AND CLOCK1 = '1' THEN -- Leitura na subida de clock
-			IF RESET1 = '0' THEN -- Caso haja reset
-				ADDR <= "00000000";
-			ELSE
-				ADDR <= valor;
-			END IF;
-
+		IF RESET1 = '0' THEN -- Caso haja reset
+			ADDR <= "00000000";
+		ELSIF CLOCK1'EVENT AND CLOCK1 = '1' THEN -- Leitura na subida de clock
+			ADDR <= valor;
 		ELSIF CLOCK1'EVENT AND CLOCK1 = '0' AND PCWrite1 = '1' THEN -- Atualização na descida de clock
 			IF ADDRESS = "01000000" THEN -- Caso passe do endereço 64, zera o valor de pc (pc mod 64), ou caso seja o primeiro ciclo da CPU
 				valor <= "00000000";
