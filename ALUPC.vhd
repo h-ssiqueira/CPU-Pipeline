@@ -12,7 +12,7 @@ ARCHITECTURE options OF ALUPC IS
 BEGIN
 	PROCESS(CLOCK1)
 	BEGIN
-		IF CLOCK1'EVENT AND CLOCK1 = '1' THEN -- Operaçâo na subida de clock (PC+4)
+		IF CLOCK1'EVENT AND CLOCK1 = '0' THEN -- Operaçâo na subida de clock (PC+4)
 			PC4 <= PC + "00000100";
 		END IF;
 	END PROCESS;

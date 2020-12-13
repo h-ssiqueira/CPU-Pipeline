@@ -15,14 +15,14 @@ ENTITY IDEX IS
 END IDEX;
 
 ARCHITECTURE options OF IDEX IS
-SIGNAL RegWrite, ALUSrcB, RegDst : STD_LOGIC;
-SIGNAL ALUOp : STD_LOGIC_VECTOR (1 DOWNTO 0);
-SIGNAL RS, RT, RD : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL A,B,Imed : STD_LOGIC_VECTOR (7 DOWNTO 0);
+--SIGNAL RegWrite, ALUSrcB, RegDst : STD_LOGIC;
+--SIGNAL ALUOp : STD_LOGIC_VECTOR (1 DOWNTO 0);
+--SIGNAL RS, RT, RD : STD_LOGIC_VECTOR(2 DOWNTO 0);
+--SIGNAL A,B,Imed : STD_LOGIC_VECTOR (7 DOWNTO 0);
 BEGIN
 	PROCESS (clock1)
 	BEGIN
-		IF clock1'EVENT AND clock1 = '0' THEN -- Realiza a escrita na descida de clock
+		IF clock1'EVENT AND clock1 = '1' THEN -- Realiza a escrita na descida de clock
 			RegWriteEX <= RegWriteID;
 			ALUSrcBEX <= ALUSrcBID;
 			RegDstEX <= RegDstID;

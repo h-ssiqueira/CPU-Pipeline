@@ -13,13 +13,13 @@ ENTITY EXWB IS
 END EXWB;
 
 ARCHITECTURE options OF EXWB IS
-SIGNAL RegWrite : STD_LOGIC;
-SIGNAL RD : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL Result : STD_LOGIC_VECTOR (7 DOWNTO 0);
+--SIGNAL RegWrite : STD_LOGIC;
+--SIGNAL RD : STD_LOGIC_VECTOR(2 DOWNTO 0);
+--SIGNAL Result : STD_LOGIC_VECTOR (7 DOWNTO 0);
 BEGIN
 	PROCESS (clock1)
 	BEGIN
-		IF clock1'EVENT AND clock1 = '0' THEN -- Realiza a escrita na descida de clock
+		IF clock1'EVENT AND clock1 = '1' THEN -- Realiza a escrita na descida de clock
 			RegWriteWB <= RegWriteEX;
 			RDWB <= RDEX;
 			ResultWB <= ResultEX;

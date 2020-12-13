@@ -9,25 +9,23 @@ END PC;
 
 ARCHITECTURE options OF PC IS
 
-SIGNAL valor :STD_LOGIC_VECTOR(7 DOWNTO 0); -- Valor de PC armazenado
+--SIGNAL valor :STD_LOGIC_VECTOR(7 DOWNTO 0); -- Valor de PC armazenado
 
 BEGIN
 	PROCESS(PCWrite1, RESET1, ADDRESS, CLOCK1)
 	BEGIN
 		IF RESET1 = '0' THEN -- Caso haja reset
 			ADDR <= "00000000";
-		ELSIF CLOCK1'EVENT AND CLOCK1 = '1' THEN -- Leitura na subida de clock
-			ADDR <= valor;
-		ELSIF CLOCK1'EVENT AND CLOCK1 = '0' AND PCWrite1 = '1' THEN -- Atualização na descida de clock
+			--valor <= "00000100";
+		--ELSIF CLOCK1'EVENT AND CLOCK1 = '1' THEN -- Leitura na subida de clock
+			--ADDR <= ADDRESS;
+		ELSIF CLOCK1'EVENT AND CLOCK1 = '1' AND PCWrite1 = '1' THEN -- Atualização na descida de clock
 			IF ADDRESS = "01000000" THEN -- Caso passe do endereço 64, zera o valor de pc (pc mod 64), ou caso seja o primeiro ciclo da CPU
-				valor <= "00000000";
+				ADDR <= "00000000";
 			ELSE -- Se não atingir o valor 64 ou não for o primeiro ciclo da CPU, atualiza o valor normalmente
-				valor <= ADDRESS;
+				ADDR <= ADDRESS;
 			END IF;
 
 		END IF;
 	END PROCESS;
 END options;
-
--- ***************** PC COM VARIÁVEL INTERNA 
--- ***************** SE NÃO FUNCIONAR USAR OS SINAIS DIRETAMENTE

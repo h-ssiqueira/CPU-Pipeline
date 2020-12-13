@@ -9,7 +9,7 @@ ENTITY IFID IS
 END IFID;
 
 ARCHITECTURE options OF IFID IS
-SIGNAL MEM: STD_LOGIC_VECTOR (15 DOWNTO 0);
+--SIGNAL MEM: STD_LOGIC_VECTOR (15 DOWNTO 0);
 BEGIN
 	PROCESS (clock1)
 	BEGIN
@@ -17,8 +17,8 @@ BEGIN
 			--Instruction <= MEM;
 		--ELSIF clock1'EVENT AND clock1 = '0' THEN -- Realiza a escrita na descida de clock
 			--MEM <= Memdata;
-			IF clock1'EVENT AND clock1 = '0' THEN
-				Instruction <= Memdata;
+		IF clock1'EVENT AND clock1 = '1' THEN
+			Instruction <= Memdata;
 		END IF;
     END PROCESS;
 END options;
