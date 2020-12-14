@@ -146,7 +146,7 @@ BEGIN
     
     PIPEIDEX: IDEX PORT MAP(CLOCK,regwriteid,ALUSrcBid,RegDstid,ALUopid,Memid(11 DOWNTO 9),Memid(8 DOWNTO 6),Memid(5 DOWNTO 3),DataAid,DataBid,Imedid,regwriteex,ALUSrcBex,RegDstex,ALUopex,RSex,RTex,RDex,DataAex,DataBex,Imedex);
 
-    FOWARDALUSRCB: Fowarding PORT MAP(CLOCK,regwritewb,RSex,RTex,RDWB,fwrA,fwrB);
+    FOWARDALUSRCB: Fowarding PORT MAP(CLOCK,regwritewb,RSex,RTex,RDwb,fwrA,fwrB);
 
     DESTINATION: MUXR PORT MAP(RegDstex,RTex,RDex,RDEXR);
 
