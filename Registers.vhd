@@ -23,7 +23,8 @@ ARCHITECTURE options OF Registers IS
 			R5 <= "00000000";
 			R6 <= "00000000";
 			R7 <= "00000000";
-		ELSIF clock1'EVENT AND clock1 = '1' AND RegWrite1 = '1' THEN -- Realiza a escrita antes da leitura na subida de clock 
+		--ELSIF clock1'EVENT AND clock1 = '1' AND RegWrite1 = '1' THEN -- Realiza a escrita antes da leitura na subida de clock 
+		ELSIF clock1 = '1' AND RegWrite1 = '1' THEN
 			CASE Rd1 IS -- R0 é uma constante 0, por isso não há escrita neste registrador
 				WHEN "001" =>
 					R1 <= data;
@@ -41,7 +42,8 @@ ARCHITECTURE options OF Registers IS
 					R7 <= data;
 				WHEN OTHERS => NULL;
 			END CASE;
-		ELSIF clock1'EVENT AND clock1 = '0' THEN -- Realiza a leitura dos registradores para executar a operação na ULA na descida do clock
+		--ELSIF clock1'EVENT AND clock1 = '0' THEN -- Realiza a leitura dos registradores para executar a operação na ULA na descida do clock
+		ELSIF clock1 = '0' THEN
 			CASE Rs1 IS -- Leitura para RS
 				WHEN "000" =>
 					RA1 <= R0;

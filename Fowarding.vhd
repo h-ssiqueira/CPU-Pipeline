@@ -11,7 +11,8 @@ ARCHITECTURE options OF Fowarding IS
 BEGIN
 	PROCESS (clock1, RegWriteWB, EXRS, EXRT, WBRD)
 	BEGIN
-		IF clock1'EVENT AND clock1 = '1' THEN -- Verifica Forwarding na subida de clock
+		--IF clock1'EVENT AND clock1 = '1' THEN -- Verifica Forwarding na subida de clock
+			IF clock1 = '1' THEN
             IF RegWriteWB = '1' AND WBRD /= "000" AND EXRS = WBRD THEN
                 FWDA <= '1';
             ELSE

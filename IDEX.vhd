@@ -22,7 +22,8 @@ ARCHITECTURE options OF IDEX IS
 BEGIN
 	PROCESS (clock1)
 	BEGIN
-		IF clock1'EVENT AND clock1 = '1' THEN -- Realiza a escrita na descida de clock
+		IF clock1'EVENT AND clock1 = '1' THEN
+		--IF clock1'EVENT AND clock1 = '0' THEN -- Realiza a escrita na descida de clock
 			RegWriteEX <= RegWriteID;
 			ALUSrcBEX <= ALUSrcBID;
 			RegDstEX <= RegDstID;
