@@ -1,0 +1,22 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/PC.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/ALU.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/ALUPC.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/Control.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/EXWB.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/Fowarding.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/IDEX.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/IFID.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/Memory64x4.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/Registers.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/SignExtend.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/CPU.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/MUXR.vhd}
+vcom -93 -work work {D:/Arquitetura/Quartus/projeto3/MUXD.vhd}
+

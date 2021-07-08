@@ -1,0 +1,197 @@
+# Reading D:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do projeto3_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/PC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:46 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/PC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC
+# -- Compiling architecture options of PC
+# End time: 13:59:46 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:46 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity ALU
+# -- Compiling architecture options of ALU
+# End time: 13:59:46 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALUPC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:46 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALUPC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity ALUPC
+# -- Compiling architecture options of ALUPC
+# End time: 13:59:46 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:46 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Control
+# -- Compiling architecture options of Control
+# End time: 13:59:46 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/EXWB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:46 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/EXWB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXWB
+# -- Compiling architecture options of EXWB
+# End time: 13:59:46 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Fowarding.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:46 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Fowarding.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Fowarding
+# -- Compiling architecture options of Fowarding
+# End time: 13:59:46 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IDEX.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:46 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IDEX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IDEX
+# -- Compiling architecture options of IDEX
+# End time: 13:59:47 on Jul 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IFID.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:47 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IFID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IFID
+# -- Compiling architecture options of IFID
+# End time: 13:59:47 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Memory64x4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:47 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Memory64x4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Memory64x4
+# -- Compiling architecture MEMORY of Memory64x4
+# End time: 13:59:47 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Registers.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:47 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Registers.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registers
+# -- Compiling architecture options of Registers
+# End time: 13:59:47 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/SignExtend.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:48 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/SignExtend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SignExtend
+# -- Compiling architecture options of SignExtend
+# End time: 13:59:48 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/CPU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:48 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/CPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU
+# -- Compiling architecture options of CPU
+# End time: 13:59:48 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXR.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:48 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUXR
+# -- Compiling architecture options of MUXR
+# End time: 13:59:48 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:48 on Jul 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUXD
+# -- Compiling architecture options of MUXD
+# End time: 13:59:48 on Jul 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.cpu
+# vsim work.cpu 
+# Start time: 13:59:55 on Jul 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(options)
+# Loading work.pc(options)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.alupc(options)
+# Loading ieee.numeric_std(body)
+# Loading work.memory64x4(memory)
+# Loading work.ifid(options)
+# Loading work.control(options)
+# Loading work.registers(options)
+# Loading work.signextend(options)
+# Loading work.idex(options)
+# Loading work.fowarding(options)
+# Loading work.muxr(options)
+# Loading work.muxd(options)
+# Loading work.alu(options)
+# Loading work.exwb(options)
+# End time: 14:00:03 on Jul 08,2021, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0

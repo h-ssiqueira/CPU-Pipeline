@@ -1,0 +1,566 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/simulation/modelsim
+Ealu
+Z1 w1607200101
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALU.vhd
+Z7 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALU.vhd
+l0
+L5
+V2Wd>oIlc7?HGK_GnII=6P1
+!s100 V4c3?0jaY40FGmd`;oKaF3
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1625763586
+!i10b 1
+Z10 !s108 1625763586.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALU.vhd|
+Z12 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALU.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Aoptions
+R2
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 2Wd>oIlc7?HGK_GnII=6P1
+l13
+L12
+V7QQ2@RH4_>RAY^1^^iKWC1
+!s100 Uhg4]P17hWkZaYO@f5c`T3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ealupc
+Z15 w1607820922
+R2
+R3
+R4
+R5
+R0
+Z16 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALUPC.vhd
+Z17 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALUPC.vhd
+l0
+L5
+VYci_XP1UJWkJkHBdSYJb:1
+!s100 UQn=I3D=fY6QbHUkm>BiM1
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALUPC.vhd|
+Z19 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/ALUPC.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R2
+R3
+R4
+R5
+DEx4 work 5 alupc 0 22 Yci_XP1UJWkJkHBdSYJb:1
+l12
+L11
+V0XM`eFSGoLe:E9FGSK^_B2
+!s100 H7UIFJAK9C^kR2i@7XkRN1
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Econtrol
+Z20 w1607954981
+R4
+R5
+R0
+Z21 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Control.vhd
+Z22 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Control.vhd
+l0
+L4
+Vbh3_@c^EVEDAo4P3a9JAj3
+!s100 U?H;fmRR0PnV496IZW2<72
+R8
+31
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Control.vhd|
+Z24 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Control.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 7 control 0 22 bh3_@c^EVEDAo4P3a9JAj3
+l16
+L13
+VL>O[6HQY=R8TW0QB3T8al3
+!s100 nA6KPU]8cFK4fj=fA2Az`1
+R8
+31
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 1
+R13
+R14
+Ecpu
+Z25 w1607957196
+R4
+R5
+R0
+Z26 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/CPU.vhd
+Z27 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/CPU.vhd
+l0
+L4
+VD0KQP`h@89]<<__ACYZ:81
+!s100 R5aXcTZ?=9gG]fU_H4gYV1
+R8
+31
+Z28 !s110 1625763588
+!i10b 1
+Z29 !s108 1625763588.000000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/CPU.vhd|
+Z31 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/CPU.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 3 cpu 0 22 D0KQP`h@89]<<__ACYZ:81
+l132
+L11
+V;5LT1ZO4Fgo872DH63hKd0
+!s100 OOGSKa1H>:GEA:Z9YWmAj3
+R8
+31
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R13
+R14
+Eexwb
+Z32 w1607825335
+R4
+R5
+R0
+Z33 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/EXWB.vhd
+Z34 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/EXWB.vhd
+l0
+L4
+VJj^JI=Q`4FAA[5WG@1DC=2
+!s100 kYBhlb@jVlTFH>]YIVMYW0
+R8
+31
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/EXWB.vhd|
+Z36 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/EXWB.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 4 exwb 0 22 Jj^JI=Q`4FAA[5WG@1DC=2
+l19
+L15
+V_m2_^>XZB_CjLHLWMoOaT3
+!s100 ;ZdQoz`L^HilonQUB31Bc0
+R8
+31
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14
+Efowarding
+Z37 w1607955685
+R4
+R5
+R0
+Z38 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Fowarding.vhd
+Z39 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Fowarding.vhd
+l0
+L4
+VE]1ZVK2z:ZcCHiS1R5?_i0
+!s100 WBeh=LCElTW`_;^5>9KWl1
+R8
+31
+R9
+!i10b 1
+R10
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Fowarding.vhd|
+Z41 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Fowarding.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 9 fowarding 0 22 E]1ZVK2z:ZcCHiS1R5?_i0
+l11
+L10
+V5J[^ZRY^n^:7oB322@OZ^1
+!s100 :li`BTb1[fPb:_TGU86T`3
+R8
+31
+R9
+!i10b 1
+R10
+R40
+R41
+!i113 1
+R13
+R14
+Eidex
+Z42 w1607958788
+R4
+R5
+R0
+Z43 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IDEX.vhd
+Z44 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IDEX.vhd
+l0
+L4
+VZ1KP5]<H:]9m;^d9AU_Oc0
+!s100 YIA31;90dz^<FgPeHG0Xc3
+R8
+31
+Z45 !s110 1625763587
+!i10b 1
+R10
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IDEX.vhd|
+Z47 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IDEX.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 4 idex 0 22 Z1KP5]<H:]9m;^d9AU_Oc0
+l22
+L17
+VHR`;GeQKEdSkG8oofalAO2
+!s100 4F0Fe=bZeZ?4Hzjodf_me2
+R8
+31
+R45
+!i10b 1
+R10
+R46
+R47
+!i113 1
+R13
+R14
+Eifid
+Z48 w1607825334
+R4
+R5
+R0
+Z49 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IFID.vhd
+Z50 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IFID.vhd
+l0
+L4
+V>mP_8>?7UAM2aHc^49i@b0
+!s100 J?DCj0NILd7cZT?h15D`_0
+R8
+31
+R45
+!i10b 1
+Z51 !s108 1625763587.000000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IFID.vhd|
+Z53 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/IFID.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 4 ifid 0 22 >mP_8>?7UAM2aHc^49i@b0
+l13
+L11
+V^Y>PY0W?j]8onS8NHc;D_1
+!s100 GmHN5@3g4dGL`6Xicj7;n2
+R8
+31
+R45
+!i10b 1
+R51
+R52
+R53
+!i113 1
+R13
+R14
+Ememory64x4
+Z54 w1607111100
+Z55 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z56 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Memory64x4.vhd
+Z57 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Memory64x4.vhd
+l0
+L5
+V6c811oY975VKRcLiJAzVC1
+!s100 9]AzI`T4Q7gQPFD?OT]GK0
+R8
+31
+R45
+!i10b 1
+R51
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Memory64x4.vhd|
+Z59 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Memory64x4.vhd|
+!i113 1
+R13
+R14
+Amemory
+R55
+R4
+R5
+DEx4 work 10 memory64x4 0 22 6c811oY975VKRcLiJAzVC1
+l24
+L12
+VeDI:^C:AXO0D=im>`ZR;=1
+!s100 :R2z:MoL@>H@ITilVAL=]1
+R8
+31
+R45
+!i10b 1
+R51
+R58
+R59
+!i113 1
+R13
+R14
+Emuxd
+Z60 w1607199684
+R4
+R5
+R0
+Z61 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXD.vhd
+Z62 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXD.vhd
+l0
+L4
+VJgJIEHC>o^h8KnzfZU1K@3
+!s100 3ehEGP488hc]K0d`?;BY52
+R8
+31
+R28
+!i10b 1
+R29
+Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXD.vhd|
+Z64 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXD.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 4 muxd 0 22 JgJIEHC>o^h8KnzfZU1K@3
+l12
+L11
+V_U[cZ[AGac;^[@^`DolD90
+!s100 EANN^A557[^8W9UOnMehD0
+R8
+31
+R28
+!i10b 1
+R29
+R63
+R64
+!i113 1
+R13
+R14
+Emuxr
+Z65 w1607199650
+R4
+R5
+R0
+Z66 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXR.vhd
+Z67 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXR.vhd
+l0
+L4
+VaNkGIZeHbn[PFIO^dV6n83
+!s100 nTbm33hG@jiIUngci87OM1
+R8
+31
+R28
+!i10b 1
+R29
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXR.vhd|
+Z69 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/MUXR.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 4 muxr 0 22 aNkGIZeHbn[PFIO^dV6n83
+l12
+L11
+VSNYJ`]1?=iLl[2<HgFJFM2
+!s100 JMc@e=N_9R5IDzn^[2OTF0
+R8
+31
+R28
+!i10b 1
+R29
+R68
+R69
+!i113 1
+R13
+R14
+Epc
+Z70 w1607824529
+R4
+R5
+R0
+Z71 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/PC.vhd
+Z72 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/PC.vhd
+l0
+L4
+VX=<3CPQ>El6fkd8nknS[>1
+!s100 aG3ggkoz0Bf2;FJ<8IBzg1
+R8
+31
+R9
+!i10b 1
+R10
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/PC.vhd|
+Z74 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/PC.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 2 pc 0 22 X=<3CPQ>El6fkd8nknS[>1
+l14
+L10
+V:Fo;B`oU9Fg6NPT@:28zQ0
+!s100 =ADoC0IbT7]=;KQ4N7al62
+R8
+31
+R9
+!i10b 1
+R10
+R73
+R74
+!i113 1
+R13
+R14
+Eregisters
+Z75 w1607958787
+R4
+R5
+R0
+Z76 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Registers.vhd
+Z77 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Registers.vhd
+l0
+L4
+V3ITi2`=VRio9WnkUXf7=<2
+!s100 lQ@YlGR22d<GDbFccbF1G1
+R8
+31
+R45
+!i10b 1
+R51
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Registers.vhd|
+Z79 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/Registers.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 9 registers 0 22 3ITi2`=VRio9WnkUXf7=<2
+l14
+L12
+V28NX?lQM5E:SDMfYJXea`1
+!s100 1B>D?Sb48CkDUX0afAXgZ1
+R8
+31
+R45
+!i10b 1
+R51
+R78
+R79
+!i113 1
+R13
+R14
+Esignextend
+Z80 w1607683605
+R4
+R5
+R0
+Z81 8C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/SignExtend.vhd
+Z82 FC:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/SignExtend.vhd
+l0
+L4
+VFZXH9ZY8>03Uz4QJzJ;V12
+!s100 4[1EV6V[o2N4i[Y3IbRW00
+R8
+31
+R28
+!i10b 1
+R29
+Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/SignExtend.vhd|
+Z84 !s107 C:/Users/Helayne.DESKTOP-UMFI8VM/Documents/GitHub/CPU-Pipeline/quartus files/SignExtend.vhd|
+!i113 1
+R13
+R14
+Aoptions
+R4
+R5
+DEx4 work 10 signextend 0 22 FZXH9ZY8>03Uz4QJzJ;V12
+l10
+L9
+VTGHPR<EB0FfVFQnKHoYh10
+!s100 11?oViGLc2H@oB;gd?SSS2
+R8
+31
+R28
+!i10b 1
+R29
+R83
+R84
+!i113 1
+R13
+R14
