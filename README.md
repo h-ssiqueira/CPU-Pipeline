@@ -1,4 +1,6 @@
 # CPU Pipeline
+![GitHub Repository Size](https://img.shields.io/github/repo-size/h-ssiqueira/CPU-Pipeline?label=Repository%20Size&style=for-the-badge)
+
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
